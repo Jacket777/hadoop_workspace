@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consumer-annotation/consumer-annotation.iml" filepath="$PROJECT_DIR$/consumer-annotation/consumer-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-xml-test/consumer-xml-test.iml" filepath="$PROJECT_DIR$/consumer-xml-test/consumer-xml-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaClientTest.iml" filepath="$PROJECT_DIR$/kafkaClientTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-producer-annotation-test/new-producer-annotation-test.iml" filepath="$PROJECT_DIR$/new-producer-annotation-test/new-producer-annotation-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-producer-xml-test/new-producer-xml-test.iml" filepath="$PROJECT_DIR$/new-producer-xml-test/new-producer-xml-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/old-producer-annotation-test/old-producer-annotation-test.iml" filepath="$PROJECT_DIR$/old-producer-annotation-test/old-producer-annotation-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/old-producer-xml-test/old-producer-xml-test.iml" filepath="$PROJECT_DIR$/old-producer-xml-test/old-producer-xml-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer-annotation-test/producer-annotation-test.iml" filepath="$PROJECT_DIR$/producer-annotation-test/producer-annotation-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer-xml-test/producer-xml-test.iml" filepath="$PROJECT_DIR$/producer-xml-test/producer-xml-test.iml" />
+    </modules>
+  </component>
+</project>

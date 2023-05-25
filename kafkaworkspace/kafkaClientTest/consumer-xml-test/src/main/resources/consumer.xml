@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--定义消息监听器-->
+    <bean id="messageListener" class="com.consumer.listener.MyListener"/>
+
+
+    <!--老版本定义consumer-->
+    <bean id="consumer" class="com.suning.kafka.client.consumer.SnKafkaConsumerFactory">
+        <property name="topic" value="topicName"/>
+        <property name="listener" value="messageListener"/>
+        <property name="properties">
+            <props>
+                <prop key="group.id">group01</prop>
+                <prop key="key.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+                <prop key="value.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+            </props>
+        </property>
+    </bean>
+
+
+    <!--新版本定义consumer topic多个-->
+    <bean id="msglistener" class="com.consumer.listener.MyListener"/>
+    <!--新版本定义consumer-->
+    <bean id="consumer01" class="com.suning.kafka.client.consumer.SnKafkaConsumer">
+        <constructor-arg name="topics">
+            <array>
+                <value>topicName01</value>
+                <value>topicName02</value>
+            </array>
+        </constructor-arg>
+        <constructor-arg name="properties">
+            <props>
+                <prop key="group.id">group02</prop>
+                <prop key="key.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+                <prop key="value.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+            </props>
+        </constructor-arg>
+        <property name="listener" ref="msglistener"/>
+    </bean>
+
+
+    <!--新版本定义consumer,但topic只有一个-->
+    <bean id="msglistener2" class="com.consumer.listener.MyListener"/>
+    <!--新版本定义consumer-->
+    <bean id="consumer02" class="com.suning.kafka.client.consumer.SnKafkaConsumer">
+        <constructor-arg name="topic">
+            <value>topicName01</value>
+        </constructor-arg>
+        <constructor-arg name="properties">
+            <props>
+                <prop key="group.id">group02</prop>
+                <prop key="key.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+                <prop key="value.serializer">org.apache.kafka.common.serialization.StringDeserializer</prop>
+            </props>
+        </constructor-arg>
+        <property name="listener" ref="msglistener"/>
+        <!--设置睡眠模式-->
+        <property name="sleepingMode" value="true"/>
+    </bean>
+</beans>

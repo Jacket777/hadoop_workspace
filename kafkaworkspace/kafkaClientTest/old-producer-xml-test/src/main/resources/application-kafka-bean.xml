@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--老客户端生产者配置-->
+    <bean id="snProudcer" class="com.suning.kafka.client.producer.SnKafkaCommonProducer">
+        <constructor-arg name="topics">
+            <list>
+                <value>kafka20601</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="properties">
+            <props>
+                <!--设置消息key和value的序列化  UUID序列化没有？？-->
+                <prop key="key.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>
+                <prop key="value.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>
+            </props>
+        </constructor-arg>
+    </bean>
+</beans>

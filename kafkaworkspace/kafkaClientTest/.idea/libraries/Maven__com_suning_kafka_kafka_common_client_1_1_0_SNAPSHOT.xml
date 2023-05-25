@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.suning.kafka:kafka_common_client:1.1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/suning/kafka/kafka_common_client/1.1.0-SNAPSHOT/kafka_common_client-1.1.0-20210426.120814-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/suning/kafka/kafka_common_client/1.1.0-SNAPSHOT/kafka_common_client-1.1.0-20210426.120814-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/suning/kafka/kafka_common_client/1.1.0-SNAPSHOT/kafka_common_client-1.1.0-20210426.120814-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

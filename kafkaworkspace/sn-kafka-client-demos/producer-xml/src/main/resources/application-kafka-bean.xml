@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="producer" class="com.suning.kafka.client.producer.SnKafkaProducer" destroy-method="close">
+        <constructor-arg name="topic" value="kafka_client_demo_topic_1"/>
+        <constructor-arg name="properties">
+            <props>
+<!--                    <prop key="propertyName_1">propertyValue_1</prop>-->
+<!--                    <prop key="propertyName_2">propertyValue_2</prop>-->
+<!--                    <prop key="propertyName_3">propertyValue_3</prop>-->
+            </props>
+        </constructor-arg>
+    </bean>
+
+    <bean id="old-producer" class="com.suning.kafka.client.producer.SnKafkaCommonProducer">
+        <constructor-arg name="topics">
+            <array>
+                <value>kafka_client_demo_topic_1</value>
+            </array>
+        </constructor-arg>
+        <constructor-arg name="properties">
+            <props>
+                <prop key="propertyName_1">propertyValue_1</prop>
+            </props>
+        </constructor-arg>
+    </bean>
+
+</beans>

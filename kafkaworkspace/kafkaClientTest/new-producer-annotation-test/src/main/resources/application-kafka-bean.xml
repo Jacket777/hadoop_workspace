@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <!--新客户端生产者配置-->
+    <!--<bean id="snNewProduce" class ="com.suning.kafka.client.producer.SnKafkaProducer">-->
+      <!--&lt;!&ndash;生产者topic 设置,可以为多个topics&ndash;&gt;-->
+     <!--<constructor-arg value="kafka20601"/>-->
+
+     <!--<constructor-arg name="properties">-->
+         <!--<props>-->
+             <!--&lt;!&ndash;设置消息key和value的序列化  UUID序列化没有？？&ndash;&gt;-->
+             <!--<prop key="key.serializer">org.apache.kafka.common.serialization.LongSerializer</prop>-->
+             <!--<prop key="value.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>-->
+         <!--</props>-->
+     <!--</constructor-arg>-->
+   <!--</bean>-->
+
+
+
+    <!--&lt;!&ndash;老客户端生产者配置&ndash;&gt;-->
+    <!--<bean id="snProudcer" class="com.suning.kafka.client.producer.SnKafkaCommonProducer">-->
+        <!--<constructor-arg name="topics">-->
+            <!--<array>-->
+                <!--<value>kafka20601</value>-->
+            <!--</array>-->
+        <!--</constructor-arg>-->
+        <!--<constructor-arg name="properties">-->
+            <!--&lt;!&ndash;<props>&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;设置消息key和value的序列化  UUID序列化没有？？&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<prop key="key.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>&ndash;&gt;-->
+                <!--&lt;!&ndash;<prop key="value.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>&ndash;&gt;-->
+            <!--&lt;!&ndash;</props>&ndash;&gt;-->
+
+            <!--<props>-->
+                <!--&lt;!&ndash;设置消息key和value的序列化  UUID序列化没有？？&ndash;&gt;-->
+                <!--<prop key="key.serializer">org.apache.kafka.common.serialization.LongSerializer</prop>-->
+                <!--<prop key="value.serializer">org.apache.kafka.common.serialization.StringSerializer</prop>-->
+            <!--</props>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+</beans>

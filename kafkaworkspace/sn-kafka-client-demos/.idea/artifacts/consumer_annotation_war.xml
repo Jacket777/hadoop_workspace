@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="consumer-annotation:war">
+    <output-path>$PROJECT_DIR$/consumer-annotation/target</output-path>
+    <root id="archive" name="consumer-annotation-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="consumer-annotation:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="mysqlSinkMessageListener" class="com.suning.kafka.consumerxml.service.MysqlSinkMessageListener"/>
+
+    <bean id="consumer" class="com.suning.kafka.client.consumer.SnKafkaConsumer" >
+        <constructor-arg name="topics" >
+            <array>
+                <value>kafka_client_demo_topic_1</value>
+                <value>kafka_client_demo_topic_2</value>
+            </array>
+        </constructor-arg>
+        <constructor-arg name="properties">
+            <props>
+                <prop key="group.id">claire_consumer</prop>
+            </props>
+        </constructor-arg>
+        <property name="listener" ref="mysqlSinkMessageListener"/>
+    </bean>
+
+
+    <!-- 依旧支持旧版定义方式 -->
+<!--    <bean id="old-consumer" class="com.suning.kafka.client.consumer.SnKafkaConsumerFactory">-->
+<!--        <property name="topic" value="kafka_client_demo_topic_1"/>-->
+<!--        <property name="listener" ref="mysqlSinkMessageListener" />-->
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="group.id">claire_consumer</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+</beans>

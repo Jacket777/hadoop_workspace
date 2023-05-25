@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consumer-annotation/consumer-annotation.iml" filepath="$PROJECT_DIR$/consumer-annotation/consumer-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-xml/consumer-xml.iml" filepath="$PROJECT_DIR$/consumer-xml/consumer-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer-annotation/producer-annotation.iml" filepath="$PROJECT_DIR$/producer-annotation/producer-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer-xml/producer-xml.iml" filepath="$PROJECT_DIR$/producer-xml/producer-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sn-kafka-client-demos.iml" filepath="$PROJECT_DIR$/sn-kafka-client-demos.iml" />
+    </modules>
+  </component>
+</project>
