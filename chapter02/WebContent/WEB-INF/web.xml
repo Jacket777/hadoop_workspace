@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+id="WebApp_ID" 
+version="3.1">
+  
+  <servlet>
+   <servlet-name>FirstServlet</servlet-name>
+   <servlet-class>com.etc.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FirstServlet</servlet-name>
+     <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   <servlet-name>ShowColor</servlet-name>
+   <servlet-class>com.etc.ShowColorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ShowColor</servlet-name>
+     <url-pattern>/ShowColor</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+ version="3.0"
+ >
+<tlib-version>1.0</tlib-version>
+<uri>simpleTags</uri>
+
+<tag>
+<description>worst use of a custom tag</description>
+<name>simple1</name>
+<tag-class>com.demo.taglib.SimpleTagTest1</tag-class>
+<body-content>empty</body-content>
+</tag>
+
+
+<tag>
+ <description>marginally better use of a custom tag</description>
+ <name>simple2</name>
+ <tag-class>com.demo.taglib.SimpleTagTest2</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>marginally better use of a custom tag</description>
+ <name>simple3</name>
+ <tag-class>com.demo.taglib.SimpleTagTest3</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>marginally better use of a custom tag</description>
+ <name>simple4</name>
+ <tag-class>com.demo.taglib.SimpleTagTest4</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>marginally better use of a custom tag</description>
+ <name>simple5</name>
+ <tag-class>com.demo.taglib.SimpleTagTest5</tag-class>
+ <body-content>scriptless</body-content>
+ <attribute>
+   <name>movieList</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+ </attribute>
+</tag>
+
+<tag>
+ <description>marginally better use of a custom tag</description>
+ <name>simple6</name>
+ <tag-class>com.demo.taglib.SimpleTagTest6</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>ludricrous use of a classic tag</description>
+ <name>classicOne</name>
+ <tag-class>com.demo.taglib.Classic1</tag-class>
+ <body-content>empty</body-content>
+</tag>
+
+<tag>
+ <description>ludricrous use of a classic tag</description>
+ <name>classicTwo</name>
+ <tag-class>com.demo.taglib.Classic2</tag-class>
+ <body-content>empty</body-content>
+</tag>
+
+<tag>
+ <description>ludricrous use of a classic tag</description>
+ <name>iteratorMovie</name>
+ <tag-class>com.demo.taglib.MyIteratorTag</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>TEST</description>
+ <name>classTest</name>
+ <tag-class>com.demo.taglib.Classic3</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+<tag>
+ <description>TEST</description>
+ <name>SimpleTest</name>
+ <tag-class>com.demo.taglib.SimpleTagTest7</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+
+<tag>
+ <description>TEST</description>
+ <name>NestedLevel</name>
+ <tag-class>com.demo.taglib.NestedLevelTag</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+
+<tag>
+ <description>TEST</description>
+ <name>ClassicParent</name>
+ <tag-class>com.demo.taglib.MyClassicParent</tag-class>
+ <body-content>scriptless</body-content>
+  <attribute>
+   <name>name</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+ </attribute>
+</tag>
+
+
+<tag>
+ <description>TEST</description>
+ <name>SimpleInner</name>
+ <tag-class>com.demo.taglib.SimpleInnnerTag</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+
+<tag>
+ <description>TEST</description>
+ <name>Menu</name>
+ <tag-class>com.demo.taglib.Menu</tag-class>
+ <body-content>scriptless</body-content>
+</tag>
+
+
+<tag>
+ <description>TEST</description>
+ <name>MenuItem</name>
+ <tag-class>com.demo.taglib.MenuItem</tag-class>
+ <body-content>scriptless</body-content>
+   <attribute>
+   <name>itemValue</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+ </attribute>
+</tag>
+
+</taglib>
